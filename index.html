@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makaan - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Link to JavaScript -->
+</head>
+<body>
+
+   <!-- Navigation Bar section -->
+   <nav class="navbar">
+    <div class="logo">
+        <img src="./img/icon-deal.png" alt="logo"> Makaan
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li class="dropdown">
+            <a href="#">PROPERTY&#9662;</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Apartment</a></li>
+                <li><a href="#">Villa</a></li>
+                <li><a href="#">House</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">PAGES&#9662;</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Agents</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+    <button class="add-btn">Add Property</button>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" >
+        <div class="hero-text">
+            <h1>Find A <span>Perfect Home</span> To Live With Your Family</h1>
+            <p>Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd reburn ipsum et diam justo clita et kasd reburn sea elitr.</p>
+            <button class="get-started-btn">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="./img/carousel-1.jpg" alt="Luxury House">
+            <img src="./img/carousel-2.jpg" alt="Modern Villa">
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search Keyword">
+        <select>
+            <option>Property Type</option>
+        </select>
+        <select>
+            <option>Location</option>
+        </select>
+        <button>Search</button>
+    </div>
+    <div class="container-fluid">
+        <section class="property-section">
+            <h2 class="section-title">Property Types</h2>
+            <p class="section-subtitle">
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum 
+                sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.
+            </p>
+
+            <div class="property-grid">
+                <div class="property-card">
+                    <img src="./img/icon-apartment.png" alt="Apartment">
+                    <h3>Apartment</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-villa.png" alt="Villa">
+                    <h3>Villa</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-house.png" alt="Home">
+                    <h3>Home</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="img/icon-housing.png" alt="Office">
+                    <h3>Office</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-building.png" alt="Building">
+                    <h3>Building</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-luxury.png" alt="Townhouse">
+                    <h3>Townhouse</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-condominium.png" alt="Shop">
+                    <h3>Shop</h3>
+                    <p>123 Properties</p>
+                </div>
+
+                <div class="property-card">
+                    <img src="./img/icon-neighborhood.png" alt="Garage">
+                    <h3>Garage</h3>
+                    <p>123 Properties</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <section class="property-wrapper">
+            <div class="property-image-container">
+                <div class="image-overlay"></div>
+                <img src="./img/about.jpg" alt="Luxury House">
+            </div>
+            <div class="property-info">
+                <h2 class="property-title">#1 Place To Find The Perfect Property</h2>
+                <p class="property-description">
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                    Clita erat ipsum lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+                </p>
+                <ul class="property-features">
+                    <li>✅ Tempor erat elitr rebum at clita</li>
+                    <li>✅ Aliqu diam amet diam et eos</li>
+                    <li>✅ Clita duo justo magna dolore erat amet</li>
+                </ul>
+                <a href="#" class="property-btn">Read More</a>
+            </div>
+        </section>
+    </div>
+    <!-- property -->
+    <section class="listing-section">
+        <div class="listing-header">
+            <h1>Property Listing</h1>
+            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd  <br>vero ipsum sit eirmod sit diam justo sed rebum.</p>
+        </div>
+        <div class="listing-filters">
+            <button class="filter-active">Featured</button>
+            <button>For Sale</button>
+            <button>For Rent</button>
+        </div>
+        
+        <div class="listing-grid">
+            <div class="listing-card">
+                <span class="listing-badge sale-badge">For Sale</span>
+                <img src="./img/property-1.jpg" alt="House">
+                <span class="listing-category">Apartment</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban House For Sale</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="listing-card">
+                <span class="listing-badge rent-badge">For Rent</span>
+                <img src="./img/property-2.jpg" alt="House">
+                <span class="listing-category">Villa</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban House For Rent</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="listing-card">
+                <span class="listing-badge sale-badge">For Sale</span>
+                <img src="./img/property-3.jpg" alt="House">
+                <span class="listing-category">Office</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban Office For Sale</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="listing-card">
+                <span class="listing-badge rent-badge">For Rent</span>
+                <img src="./img/property-4.jpg" alt="House">
+                <span class="listing-category">Building</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban Building For Rent</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="listing-card">
+                <span class="listing-badge sale-badge">For Sale</span>
+                <img src="./img/property-5.jpg" alt="House">
+                <span class="listing-category">Home</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban Villa For Sale</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            <div class="listing-card">
+                <span class="listing-badge sale-badge">For Sale</span>
+                <img src="./img/property-6.jpg" alt="House">
+                <span class="listing-category">Shop</span>
+                <div class="listing-details">
+                    <h2>$12,345</h2>
+                    <p>Golden Urban Villa For Sale</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+                    <div class="listing-meta">
+                        <span><i class="fas fa-expand"></i> 1000 Sqft</span>
+                        <span><i class="fas fa-bed"></i> 3 Bed</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="property-button">
+            <button class="button">Browse More Property</button>
+            </div>
+            <!-- property of agent -->
+            <div class="section">
+                <div class="panel">
+                    <div class="visual">
+                        <img src="./img/call-to-action.jpg" alt="Agent">
+                    </div>
+                    <div class="info">
+                        <h2>Contact With Our Certified Agent</h2>
+                        <p>Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
+                        <div class="controls">
+                            <a href="#" class="phone">📞 Make A Call</a>
+                            <a href="#" class="book">📅 Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!---AGENT SECTION -->
+    <section class="agents-section">
+        <!-- Headline and Subline -->
+        <div class="agents-header">
+            <h2>Property Agents</h2>
+            <p>
+                Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.
+            </p>
+        </div>
+    
+        <!-- Agents Container -->
+        <div class="unique">
+            <div class="agent-card">
+                <img src="./img/team-1.jpg" alt="Agent 1">
+                <div class="agent-info">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="agent-card">
+                <img src="./img/team-2.jpg" alt="Agent 2">
+                <div class="agent-info">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="agent-card">
+                <img src="./img/team-3.jpg" alt="Agent 3">
+                <div class="agent-info">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+    
+            <div class="agent-card">
+                <img src="./img/team-4.jpg" alt="Agent 4">
+                <div class="agent-info">
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Full Name</h3>
+                    <p>Designation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Our Clients Say Section -->
+    <section class="client-testimonials">
+        <div class="testimonial-box">
+            <div class="testimonial-header">
+                <h2>Our Clients Say!</h2>
+                <p>
+                    Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd 
+                    vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!----client feedback--><section class="client-feedback">
+    <div class="feedback-box">
+        <p class="feedback-text">
+            Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. 
+            Est stet ea lorem amet est kasd kasd erat eos.
+        </p>
+        <div class="client-info">
+            <img src="./img/testimonial-1.jpg" alt="Client Image" class="client-img">
+            <div class="client-details">
+                <strong>Client Name</strong>
+                <span>Profession</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-box">
+        <p class="feedback-text">
+            Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. 
+            Est stet ea lorem amet est kasd kasd erat eos.
+        </p>
+        <div class="client-info">
+            <img src="./img/testimonial-2.jpg" alt="Client Image" class="client-img">
+            <div class="client-details">
+                <strong>Client Name</strong>
+                <span>Profession</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-box">
+        <p class="feedback-text">
+            Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. 
+            Est stet ea lorem amet est kasd kasd erat eos.
+        </p>
+        <div class="client-info">
+            <img src="./img/testimonial-3.jpg" alt="Client Image" class="client-img">
+            <div class="client-details">
+                <strong>Client Name</strong>
+                <span>Profession</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!----Footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Get In Touch -->
+        <div class="footer-section contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Street, New York, USA</p>
+            <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color: white;"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+            </ul>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="footer-section photo-gallery">
+            <h3 style="padding-left: 20px;">Photo Gallery</h3>
+            <div class="gallery">
+                <img src="./img/property-1.jpg" alt="House">
+                <img src="./img/property-2.jpg" alt="House">
+                <img src="./img/property-3.jpg" alt="House">
+                <img src="./img/property-4.jpg" alt="House">
+                <img src="./img/property-5.jpg" alt="House">
+                <img src="./img/property-6.jpg" alt="House">
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your email">
+                <button>SignUp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© <a href="#">Your Site Name</a>, All Rights Reserved. Designed By <a href="#">HTML Codex</a></p>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
+</footer>
+<script src="./script.js"></script>  
+</body>
+</html>
